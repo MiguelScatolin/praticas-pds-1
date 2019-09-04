@@ -1,0 +1,3 @@
+gcc -c estatistica.c
+gcc pratica2.c -o pratica2 estatistica.o
+./pratica2.exe

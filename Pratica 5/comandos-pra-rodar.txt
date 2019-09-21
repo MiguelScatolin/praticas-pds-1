@@ -1,0 +1,3 @@
+gcc -c prova.c
+gcc prova1.c -o prova1 prova.o
+./prova1.exe

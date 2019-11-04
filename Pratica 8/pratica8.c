@@ -109,11 +109,11 @@ int contaZerosDaMatriz(int matriz[][100], int m, int n) {
 
 void sobeZeros(int matriz[][100], int m, int n) {
     for(int j = 0; j < n; j++) {
-        for(int i = m-1; i > 0; i--) {
+        for(int i = m; i > 0; i--) {
             if(matriz[i][j] == 0 && matriz[i-1][j] != 0) {
                 matriz[i][j] = matriz[i-1][j];
                 matriz[i-1][j] = 0;
-                i = m-1;
+                i = m;
             }
         }
     }
@@ -121,7 +121,7 @@ void sobeZeros(int matriz[][100], int m, int n) {
 
 void main()
 {
-    int m = 8, n=10, k=3, zerosMatriz = 0, sequenciasEncontradas = 0;
+    int m = 6, n = 6, k = 3, zerosMatriz = 0, sequenciasEncontradas = 0;
 
     //leValores(&m, &n, &k);
 

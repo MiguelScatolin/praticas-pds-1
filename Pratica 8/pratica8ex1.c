@@ -121,9 +121,9 @@ void sobeZeros(int matriz[][100], int m, int n) {
 
 void main()
 {
-    int m = 6, n = 6, k = 3, zerosMatriz = 0, sequenciasEncontradas = 0;
+    int m, n, k, zerosMatriz = 0, sequenciasEncontradas = 0;
 
-    //leValores(&m, &n, &k);
+    leValores(&m, &n, &k);
 
     int matriz[m][n];
 
